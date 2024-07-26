@@ -10,7 +10,7 @@ const typeStyle = {
 const Button = ({ children, type, onClick, isDisabled }) => {
   return (
     <button
-      className={"py-5 px-8 rounded-md disabled:opacity-40" + typeStyle[type]}
+      className={"py-5 px-8 rounded-md disabled:opacity-40 hover:opacity-70" + typeStyle[type]}
       onClick={onClick}
       disabled={isDisabled}
     >

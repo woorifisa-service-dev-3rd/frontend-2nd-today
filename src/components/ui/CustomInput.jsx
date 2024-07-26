@@ -5,7 +5,7 @@ const CustomInput = ({ type = 'text', value, onChange, placeholder, design, labe
   
   return (
       <>
-        {design === 'search' && <div className=" w-fit flex items-center rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
+        {design === 'search' && <div className=" w-full flex items-center rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
             <button id="searchBtn" className="mr-2">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#23262A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -25,7 +25,7 @@ const CustomInput = ({ type = 'text', value, onChange, placeholder, design, labe
                       onChange={onChange}
                       type={type}
                       value={value}
-                      className={`block w-fix rounded-md border-0 
+                      className={`block w-full rounded-md border-0 
                       py-1.5 pl-7 pr-20 text-gray-900 shadow-md ring-1 ring-inset 
                       ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset 
                       focus:ring-sky-600 sm:text-sm sm:leading-6`} 
@@ -33,7 +33,7 @@ const CustomInput = ({ type = 'text', value, onChange, placeholder, design, labe
                   />
           </div>}
 
-          {design === 'label' && <div className=" w-fit flex flex-col justify-center items-start rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
+          {design === 'label' && <div className=" w-full flex flex-col justify-center items-start rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
             <p className='text-xs opacity-50'>{label}</p>
             <input 
                 onChange={onChange}
@@ -46,7 +46,7 @@ const CustomInput = ({ type = 'text', value, onChange, placeholder, design, labe
 
         { design === 'label-more' && 
       <div className='flex flex-col'>
-        <div className="w-fit flex flex-col justify-center items-start rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
+        <div className="w-full flex flex-col justify-center items-start rounded-md border-0 py-1.5 pl-3 pr-3 text-gray-900 shadow-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6">
           <p className='text-xs opacity-50 self-start'>{label}</p>
           <input 
             onChange={onChange}
