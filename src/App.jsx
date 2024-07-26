@@ -13,6 +13,14 @@ function App() {
           Button Label
         </Buttons>
       </div>
+      <div className="flex justify-around w-1/2 my-2">
+        <Buttons type="line" onClick={(e) => console.log(e.target.className)}>
+          Button Label
+        </Buttons>
+        <Buttons type="line" isDisabled={true} onClick={(e) => console.log(e.target.className)}>
+          Button Label
+        </Buttons>
+      </div>
     </div>
   );
 }
