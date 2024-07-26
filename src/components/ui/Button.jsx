@@ -3,9 +3,10 @@ import React from "react";
 const typeStyle = {
   filled: " bg-blue-500 text-white ",
   line: " border-2 border-blue-500 text-blue-500 ",
+  light: " bg-sky-100 text-blue-500 ",
 };
 
-const Buttons = ({ children, type, onClick, isDisabled }) => {
+const Button = ({ children, type, onClick, isDisabled }) => {
   return (
     <button
       className={"py-5 px-8 rounded-md disabled:opacity-40" + typeStyle[type]}
@@ -17,4 +18,4 @@ const Buttons = ({ children, type, onClick, isDisabled }) => {
   );
 };
 
-export default Buttons;
+export default Button;
