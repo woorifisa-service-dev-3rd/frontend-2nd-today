@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 const ToggleSwitch = ({on, off, toggle, setToggle}) => {
     return (
         <>
