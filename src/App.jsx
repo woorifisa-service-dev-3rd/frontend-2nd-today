@@ -4,7 +4,7 @@ import Button from "./components/ui/Button";
 function App() {
   return (
     <div className="w-full h-full flex flex-col items-center">
-      <h1 className="font-bold text-3xl">Button</h1>
+      <h1 className="font-bold text-3xl">Buttons</h1>
       <div className="flex justify-around w-1/2 my-2">
         <Button type="filled" onClick={(e) => console.log(e.target.className)}>
           Button Label
@@ -26,6 +26,14 @@ function App() {
           Button Label
         </Button>
         <Button type="light" isDisabled={true} onClick={(e) => console.log(e.target.className)}>
+          Button Label
+        </Button>
+      </div>
+      <div className="flex justify-around w-1/2 my-2">
+        <Button type="secondary" onClick={(e) => console.log(e.target.className)}>
+          Button Label
+        </Button>
+        <Button type="secondary" isDisabled={true} onClick={(e) => console.log(e.target.className)}>
           Button Label
         </Button>
       </div>
