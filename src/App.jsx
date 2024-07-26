@@ -1,12 +1,20 @@
-import './App.css'
+import "./App.css";
+import Buttons from "./components/ui/Buttons";
 
 function App() {
-
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="w-full h-full flex flex-col items-center">
+      <h1 className="font-bold text-3xl">Buttons</h1>
+      <div className="flex justify-around w-1/2 my-2">
+        <Buttons type="filled" onClick={(e) => console.log(e.target.className)}>
+          Button Label
+        </Buttons>
+        <Buttons type="filled" isDisabled={true} onClick={(e) => console.log(e.target.className)}>
+          Button Label
+        </Buttons>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
